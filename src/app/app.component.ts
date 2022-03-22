@@ -21,4 +21,7 @@ export class AppComponent {
   arr = ['harvey spector', 'donna', 'mike ross', 'luis litt', 'danial hardmen', 'jessica pearson', 'rachel zane', 'travis scot']
   siteUrl = window.location.href
 
+  getName(name="huwaiza tahir"){
+    alert(name)
+  }
 }
