@@ -4,5 +4,17 @@
 <app-signup></app-signup>
 <button (click)="getName('harvey spector')">Wanna know my name?</button>
 <br>
+<br>
+<br>
 
-<input type="text" (keyup)="myEvent($event)"/>
+<input type="text" #myText (keyup)="myEvent($event)"/>
+<br>
+<br>
+
+<input type="text" #blurText (blur)="myEvent($event)"/>
+
+<br>
+
+<div style="background-color: skyblue;" (mouseover)="myEvent($event)">
+    Mouse Events
+</div>
