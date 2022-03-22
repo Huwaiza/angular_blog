@@ -24,4 +24,8 @@ export class AppComponent {
   getName(name="huwaiza tahir"){
     alert(name)
   }
+
+  myEvent(event: Event){
+    console.warn((event.target as HTMLInputElement).value);    
+  }
 }
