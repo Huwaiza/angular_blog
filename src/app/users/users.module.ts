@@ -3,12 +3,16 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { FormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
   declarations: [
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
@@ -16,7 +20,9 @@ import { FormsModule } from '@angular/forms';
   ],
   exports: [
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    HeaderComponent,
+    FooterComponent
   ]
 })
 export class UsersModule { }

@@ -1,0 +1,10 @@
+.header-class{
+    background-color: lightblue;
+    position: absolute;
+    top: 0%;
+    padding: 2%;
+    margin: 0%;
+    width: 100%;
+    justify-content: center;
+    text-align: center
+}
