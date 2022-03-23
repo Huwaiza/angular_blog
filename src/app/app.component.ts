@@ -36,4 +36,7 @@ export class AppComponent {
   enableInput(){
     this.disabledInput = false
   }
+
+  ifShow = false
+
 }

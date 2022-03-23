@@ -41,3 +41,18 @@
 
 
 <button (click)="enableInput()" >Enable text box</button>
+
+<h1 *ngIf="ifShow else elseBlock">
+    This is passed if the boolean is true
+</h1>
+
+<ng-template #elseBlock>
+    <h2>This is the else block</h2>
+</ng-template>
+
+<br>
+<br>
+
+<p>This is rendered using for loop</p>
+
+<h4 *ngFor="let item of arr">{{item}}</h4>
