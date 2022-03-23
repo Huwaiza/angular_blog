@@ -21,7 +21,6 @@
 <br>
 <br>
 
-
 <p>For testing blur in angular</p>
 <input type="text" #blurText (blur)="myEvent($event)"/>
 
@@ -31,3 +30,14 @@
     Mouse Events
 </div>
 
+<!-- Property binding -->
+<p>Property binding in angular</p>
+<input [disabled]="disabledInput" type="text" [value]=title />
+<br>
+<br>
+<br>
+<p>This is interpolation in angular</p>
+<input disabled={{disabledInput}} type="text" value={{title}} />
+
+
+<button (click)="enableInput()" >Enable text box</button>

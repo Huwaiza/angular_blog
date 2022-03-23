@@ -31,4 +31,9 @@ export class AppComponent {
     this.keyUpString = (event.target as HTMLInputElement).value 
     console.warn(this.keyUpString);    
   }
+
+  disabledInput = true
+  enableInput(){
+    this.disabledInput = false
+  }
 }
