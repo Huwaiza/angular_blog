@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'M Huwaiza Tahir';
   message = "My message to world is, I won't quit"
-  
+  keyUpString = ""
+  name = ""  
   testimonials(){
     return "Testimonials will be provided upon demand"
   }
@@ -22,10 +23,12 @@ export class AppComponent {
   siteUrl = window.location.href
 
   getName(name="huwaiza tahir"){
+    this.name = name
     alert(name)
   }
 
   myEvent(event: Event){
-    console.warn((event.target as HTMLInputElement).value);    
+    this.keyUpString = (event.target as HTMLInputElement).value 
+    console.warn(this.keyUpString);    
   }
 }

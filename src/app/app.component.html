@@ -6,11 +6,23 @@
 <br>
 <br>
 <br>
-
+<p>For testing keyup in angular</p>
 <input type="text" #myText (keyup)="myEvent($event)"/>
+<p>{{keyUpString}}</p>
+
 <br>
 <br>
 
+<p>For testing sending value on button</p>
+<button (click)="getName(myTextOnButton.value)">Send value, just click me</button>
+<input type="text" #myTextOnButton />
+<p>{{name}}</p>
+
+<br>
+<br>
+
+
+<p>For testing blur in angular</p>
 <input type="text" #blurText (blur)="myEvent($event)"/>
 
 <br>
