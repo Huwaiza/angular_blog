@@ -19,13 +19,16 @@ export class SignupComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-      this.parentComponent.emit("hello")
   }
 
   signupUser(form: object){
     const jsonValue = JSON.stringify(form);
     const valueFromJson = JSON.parse(jsonValue);
     console.log(valueFromJson.email)
+  }
+
+  sendDataToParent(){
+    this.parentComponent.emit({"name": "huwaiza tahir"})
   }
 
 }
