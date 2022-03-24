@@ -60,4 +60,8 @@ export class AppComponent {
   parentComponent(someStr: String){
       console.log(someStr)
   }
+
+  today = Date.now()
+
+  pkr = 100
 }
