@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Form, FormArray } from '@angular/forms';
 import { Data } from '@angular/router';
 
@@ -8,7 +8,8 @@ import { Data } from '@angular/router';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
-
+  
+  @Input() p_name=""; 
   constructor() { }
 
   ngOnInit(): void {

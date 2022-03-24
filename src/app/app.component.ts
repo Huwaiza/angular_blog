@@ -8,7 +8,7 @@ export class AppComponent {
   title = 'M Huwaiza Tahir';
   message = "My message to world is, I won't quit"
   keyUpString = ""
-  name = ""  
+  name = "huwaiza .................."  
   testimonials(){
     return "Testimonials will be provided upon demand"
   }
