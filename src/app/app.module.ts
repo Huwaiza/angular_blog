@@ -7,12 +7,14 @@ import { UsersModule } from './users/users.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button'
-import { MatSliderModule } from '@angular/material/slider'
+import { MatSliderModule } from '@angular/material/slider';
+import { HuwaizaStyleDirective } from './huwaiza-style.directive'
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HuwaizaStyleDirective
   ],
   imports: [
     BrowserModule,
