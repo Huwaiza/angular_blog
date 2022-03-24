@@ -1,7 +1,12 @@
-<app-header></app-header>
-<h1>Please Login</h1>
-<app-login></app-login>
-<app-signup [p_name]="obj" [list_obj]="arr_obj" (parentComponent)="parentComponent($event)"></app-signup>
+<!-- <app-header></app-header> -->
+<!-- <app-login></app-login> -->
+<a routerLink="login">Please Login</a>
+<br>
+<br>
+<a routerLink="signup">Please Signup</a>
+
+<router-outlet></router-outlet>
+<!-- <app-signup [p_name]="obj" [list_obj]="arr_obj" (parentComponent)="parentComponent($event)"></app-signup> -->
 <!-- <app-footer></app-footer> -->
 
 <!-- <button (click)="getName('harvey spector')">Wanna know my name?</button>
@@ -59,7 +64,7 @@
 
 <h4 *ngFor="let item of arr">{{item}}</h4> -->
 
-<p>Following is the example of angular bootstrap component!</p>
+<!-- <p>Following is the example of angular bootstrap component!</p>
 <br>
 <br>
 <p>You can easily control dropdowns programmatically using the exported dropdown instance.</p>
@@ -88,4 +93,4 @@
 
 <p>{{name | uppercase }}</p>
 <p>{{today | date:"fullDate"}}</p>
-<p>{{pkr | currency:"USD"}}</p>
+<p>{{pkr | currency:"USD"}}</p> -->
