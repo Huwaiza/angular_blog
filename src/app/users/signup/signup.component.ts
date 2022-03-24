@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Form, FormArray } from '@angular/forms';
 import { Data } from '@angular/router';
 
@@ -11,12 +11,15 @@ export class SignupComponent implements OnInit {
   
   @Input() p_name={};
   @Input() list_obj={};
-   
+
+
+  @Output() parentComponent: EventEmitter <any> = new EventEmitter();
   map = new Map([[2, 'foo'], [1, 'bar']]);
 
   constructor() { }
 
   ngOnInit(): void {
+      this.parentComponent.emit("hello")
   }
 
   signupUser(form: object){

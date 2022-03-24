@@ -57,4 +57,7 @@ export class AppComponent {
 
   ifShow = false
 
+  parentComponent(someStr: String){
+      console.log(someStr)
+  }
 }
