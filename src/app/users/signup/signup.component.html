@@ -2,7 +2,26 @@
 <br>
 <p>The following data is coming from parent component</p>
 
+
+<div *ngFor="let item of p_name | keyvalue">
+    {{item.key}}:{{item.value}}
+</div>
+
+<div *ngFor="let item of map | keyvalue">
+    {{item.key}}:{{item.value}}
+</div>
+
+
 <p>{{ p_name }}</p>
+
+
+<div *ngFor="let item of list_obj | keyvalue">
+    {{item.key}} :::: {{item.value}}
+</div>
+
+<p>{{ list_obj }}</p>
+
+
 <p>signup to Cinya</p>
 
 <div class="row">

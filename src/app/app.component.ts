@@ -18,6 +18,25 @@ export class AppComponent {
     'learn': "I want to learn Angular"
   }
 
+  arr_obj = [
+    {
+      'job_title': "Senior Python Developer",
+      'learn': "I want to learn Angular"
+    },
+    {
+      'job_title': "Senior Python Developer",
+      'learn': "I want to learn Angular"
+    },
+    {
+      'job_title': "Senior Python Developer",
+      'learn': "I want to learn Angular"
+    },
+    {
+      'job_title': "Senior Python Developer",
+      'learn': "I want to learn Angular"
+    }
+  ]
+
   arr = ['harvey spector', 'donna', 'mike ross', 'luis litt', 'danial hardmen', 'jessica pearson', 'rachel zane', 'travis scot']
   siteUrl = window.location.href
 

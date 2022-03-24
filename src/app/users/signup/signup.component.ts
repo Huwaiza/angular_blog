@@ -9,7 +9,11 @@ import { Data } from '@angular/router';
 })
 export class SignupComponent implements OnInit {
   
-  @Input() p_name=""; 
+  @Input() p_name={};
+  @Input() list_obj={};
+   
+  map = new Map([[2, 'foo'], [1, 'bar']]);
+
   constructor() { }
 
   ngOnInit(): void {
