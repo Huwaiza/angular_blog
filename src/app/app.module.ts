@@ -5,6 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UsersModule } from './users/users.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button'
+import { MatSliderModule } from '@angular/material/slider'
+
 
 @NgModule({
   declarations: [
@@ -15,6 +19,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     AppRoutingModule,
     UsersModule,
     NgbModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatSliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
