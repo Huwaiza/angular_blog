@@ -9,7 +9,7 @@ import { UsersDataService } from './users-data.service'
 export class AppComponent {
   
   constructor(private user:UsersDataService){
-    console.log("this data is coming from service", this.user.getUsersData())
+    console.log("this data is coming from service", this.user.getUsersData().subscribe(data => console.log(data)))
   }
   
   title = 'M Huwaiza Tahir';

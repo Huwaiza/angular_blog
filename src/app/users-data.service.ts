@@ -1,18 +1,18 @@
 import { Injectable } from '@angular/core';
+import {HttpClient} from '@angular/common/http'
 
 @Injectable({
   providedIn: 'root'
 })
 export class UsersDataService {
 
-  constructor() { }
+  constructor(private http: HttpClient) {
+
+
+  }
 
   getUsersData(){
-
-    return{
-      name: "huwaiza",
-      age: 23,
-      proffession: "software engineer"
-    }
+    let url = "http://jsonplaceholder.typicode.com/todos/"
+    return this.http.get(url)
   }
 }
