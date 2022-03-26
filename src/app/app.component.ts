@@ -7,9 +7,15 @@ import { UsersDataService } from './users-data.service'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  data = [];
   
   constructor(private user:UsersDataService){
-    console.log("this data is coming from service", this.user.getUsersData().subscribe(data => console.log(data)))
+    this.user.getUsersData().subscribe(apiData => {
+      const jsonValue = JSON.stringify(apiData);
+      const valueFromJson = JSON.parse(jsonValue);
+      this.data = valueFromJson
+    })
   }
   
   title = 'M Huwaiza Tahir';

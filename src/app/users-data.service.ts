@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http'
+import {HttpClient, HttpResponse} from '@angular/common/http'
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +13,6 @@ export class UsersDataService {
 
   getUsersData(){
     let url = "http://jsonplaceholder.typicode.com/todos/"
-    return this.http.get(url)
+    return this.http.get<HttpResponse<any>[]>(url)
   }
 }
