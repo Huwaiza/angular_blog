@@ -21,10 +21,10 @@ export class SignupComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  signupUser(form: object){
+  signupUser(form: any){
     const jsonValue = JSON.stringify(form);
     const valueFromJson = JSON.parse(jsonValue);
-    console.log(valueFromJson.email)
+    console.log(valueFromJson)
   }
 
   sendDataToParent(){

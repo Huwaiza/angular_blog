@@ -26,6 +26,7 @@ import { AdminModule } from './admin/admin.module'
     MatSliderModule,
     HttpClientModule,
     AdminModule,
+    NgbModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
