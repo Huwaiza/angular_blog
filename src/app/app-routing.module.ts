@@ -4,9 +4,14 @@ import { PageNotFoundComponent } from './users/page-not-found/page-not-found.com
 
 const routes: Routes = [
   {
-    path: "**",
-    component: PageNotFoundComponent
-  }
+    path: 'admin',
+    loadChildren: () => import('./admin/admin.module').then(mod => mod.AdminModule)
+  },
+  {
+    path: 'users',
+    loadChildren: () => import('./users/users.module').then(mod => mod.UsersModule)
+  },
+  
 ];
 
 @NgModule({
