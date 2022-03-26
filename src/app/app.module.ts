@@ -10,7 +10,7 @@ import { MatButtonModule } from '@angular/material/button'
 import { MatSliderModule } from '@angular/material/slider';
 import { HuwaizaStyleDirective } from './huwaiza-style.directive'
 import { HttpClientModule } from '@angular/common/http';
-
+import { AdminModule } from './admin/admin.module'
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +24,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MatButtonModule,
     MatSliderModule,
-    HttpClientModule
+    HttpClientModule,
+    AdminModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

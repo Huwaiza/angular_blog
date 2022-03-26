@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-
+import { UsersRoutingModule } from './users-routing.module'
 
 @NgModule({
   declarations: [
@@ -18,7 +18,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    UsersRoutingModule,
   ],
   exports: [
     LoginComponent,

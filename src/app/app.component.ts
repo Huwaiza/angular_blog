@@ -1,12 +1,30 @@
 import { Component } from '@angular/core';
 import { UsersDataService } from './users-data.service'
 
+interface datatype{
+  name: string,
+  age: number,
+  pakistani: boolean,
+  address: any
+}
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  getDataUsingModel(){
+    const data: datatype ={
+      name: "huwaiza",
+      age: 23,
+      pakistani: true,
+      address: "some address 1034"
+    }
+
+    return data
+  }
 
   data = [];
   
