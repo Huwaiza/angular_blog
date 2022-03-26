@@ -1,10 +1,17 @@
 import { Component } from '@angular/core';
+import { UsersDataService } from './users-data.service'
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  
+  constructor(private user:UsersDataService){
+    console.log("this data is coming from service", this.user.getUsersData())
+  }
+  
   title = 'M Huwaiza Tahir';
   message = "My message to world is, I won't quit"
   keyUpString = ""
